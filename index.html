@@ -3,32 +3,61 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Your Site — Home</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Digital Boost Pro — Ads & Growth</title>
+  <meta name="description" content="Digital Boost Pro — digital marketing, Google & Meta Ads expertise" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header>
-    <nav class="nav">
-      <a href="/">Home</a>
-      <a href="/about.html">About</a>
-      <a href="/contact.html">Contact</a>
-    </nav>
-    <h1>Welcome to DigitalBoostPro</h1>
-    <p class="lead">Smart Digital Marketing & Ad Strategy Solutions.</p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <img src="images/logo.png" alt="Digital Boost Pro" class="logo" />
+      <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/services.html">Services</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+      <button id="menuBtn" class="hamburger">☰</button>
+    </div>
   </header>
 
   <main>
-    <section>
-      <h2>Featured</h2>
-      <p>Start adding your content here. Replace this text.</p>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Grow faster with data-driven Ads</h1>
+        <p>Google & Meta Ads strategies, CRO, and campaign management that convert.</p>
+        <a class="btn primary" href="/services.html">See Services</a>
+      </div>
+    </section>
+
+    <section class="features container">
+      <article>
+        <h3>Meta & Google Ads</h3>
+        <p>Campaign setup, scaling, and auditing — with clear ROI focus.</p>
+      </article>
+      <article>
+        <h3>Creative & Copy</h3>
+        <p>Thumbnails, ad copy & assets that increase CTR and lower CPL.</p>
+      </article>
+      <article>
+        <h3>Analytics & Reporting</h3>
+        <p>Conversion tracking, GA4 setup and weekly reports you can act on.</p>
+      </article>
+    </section>
+
+    <section class="cta container">
+      <h2>Ready to boost your growth?</h2>
+      <p>Book a free 20-minute audit call.</p>
+      <a class="btn" href="/contact.html">Book Now</a>
     </section>
   </main>
 
-  <footer>
-    <p>© <span id="year"></span> Your Name</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Digital Boost Pro</p>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
-
