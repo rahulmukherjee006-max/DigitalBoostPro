@@ -195,6 +195,28 @@ footer {
 .about-page h2 {
   margin-top: 30px;
 }
+.contact-page {
+  padding: 60px 10%;
+}
+
+form {
+  max-width: 500px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+button {
+  background: #3ea6ff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
 
 
 
