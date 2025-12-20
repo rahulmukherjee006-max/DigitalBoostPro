@@ -812,17 +812,17 @@ body {
 .why-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
+  gap: 16px; /* reduced spacing */
 }
 
 .why-card {
   background: #ffffff;
-  padding: 30px;
+  padding: 20px; /* reduced padding */
   border-radius: 14px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
-  transform: translateY(40px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transform: translateY(20px); /* less vertical shift */
   opacity: 0;
-  animation: fadeUp 0.8s ease forwards;
+  animation: fadeUp 0.6s ease forwards;
 }
 
 .why-card:nth-child(2){animation-delay:0.2s;}
@@ -1026,6 +1026,7 @@ body {
   50% { transform: scale(1.08); }
   100% { transform: scale(1); }
 }
+
 
 
 
