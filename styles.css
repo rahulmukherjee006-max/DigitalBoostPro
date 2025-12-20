@@ -805,7 +805,7 @@ body {
    WHY SECTION ANIMATION
 =========================== */
 .why-section {
-  padding: 80px 10%;
+  padding: 40px 0; /* tighter vertical spacing */
   background: #f8fafc;
 }
 
@@ -1026,6 +1026,7 @@ body {
   50% { transform: scale(1.08); }
   100% { transform: scale(1); }
 }
+
 
 
 
