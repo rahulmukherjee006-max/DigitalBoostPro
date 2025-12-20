@@ -145,5 +145,20 @@ footer {
 .whatsapp-float:hover {
   transform: scale(1.1);
 }
+.trust {
+  background: #f1f5f9;
+  padding: 60px 10%;
+}
+
+.trust ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.trust li {
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
 
 
