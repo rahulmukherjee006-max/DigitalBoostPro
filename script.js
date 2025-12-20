@@ -38,6 +38,28 @@ setInterval(() => {
     `"${testimonials[index]}"<br><br><strong>— Client</strong>`;
   index = (index + 1) % testimonials.length;
 }, 4000);
+// COUNT-UP ANIMATION
+const counters = document.querySelectorAll('.count');
+
+counters.forEach(counter => {
+  const target = +counter.getAttribute('data-target');
+  const speed = 80;
+
+  const updateCount = () => {
+    const current = +counter.innerText;
+    const increment = target / speed;
+
+    if (current < target) {
+      counter.innerText = Math.ceil(current + increment);
+      setTimeout(updateCount, 30);
+    } else {
+      counter.innerText = target;
+    }
+  };
+
+  updateCount();
+});
+
 
 
 
