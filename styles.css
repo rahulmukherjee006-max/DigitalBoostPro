@@ -301,6 +301,34 @@ button {
   transform: scale(1.1);
   background-color: #1ebe5d;
 }
+.testimonials {
+  padding: 80px 10%;
+  background: #f8fafc;
+  text-align: center;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.testimonial {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.trust-badges {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-weight: 600;
+}
+
 
 
 
