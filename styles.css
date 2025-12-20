@@ -961,6 +961,72 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+/* ===== FINAL CTA SECTION ===== */
+
+.final-cta {
+  background: linear-gradient(135deg, #0f172a, #020617);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 700px;
+  margin: auto;
+  color: #ffffff;
+  animation: fadeUp 1s ease forwards;
+}
+
+.cta-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+  animation: pulse 2s infinite;
+}
+
+.final-cta h2 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.final-cta p {
+  font-size: 16px;
+  color: #cbd5f5;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: #38bdf8;
+  color: #020617;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(56,189,248,0.4);
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
 
 
 
