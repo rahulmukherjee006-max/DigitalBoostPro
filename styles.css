@@ -357,6 +357,28 @@ button {
   font-weight: 700;
   margin: 20px 0;
 }
+/* Testimonials */
+.testimonials {
+  padding: 80px 10%;
+  background: #f9fafb;
+  text-align: center;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.testimonial {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  font-size: 15px;
+}
+
 
 
 
