@@ -510,6 +510,21 @@ button {
   50% { transform: translateY(-12px); }
   100% { transform: translateY(0); }
 }
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+}
+
 
 
 
