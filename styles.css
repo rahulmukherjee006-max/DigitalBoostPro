@@ -766,6 +766,89 @@ button {
     font-size: 28px;
   }
 }
+/* ===== PROCESS SECTION ===== */
+.process {
+  background: #f9fafb;
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.process h2 {
+  font-size: 36px;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.process .sub {
+  color: #475569;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.process-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 35px 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.process-card img {
+  width: 64px;
+  margin-bottom: 20px;
+}
+
+.process-card h3 {
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.process-card p {
+  color: #475569;
+  font-size: 15px;
+}
+
+/* Highlight center card */
+.process-card.highlight {
+  border: 2px solid #38bdf8;
+  transform: scale(1.03);
+}
+
+/* Button */
+.btn-primary {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 22px;
+  background: #38bdf8;
+  color: #0f172a;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background: #0ea5e9;
+  color: #fff;
+}
+
+/* Mobile fix */
+@media (max-width: 768px) {
+  .process {
+    padding: 60px 6%;
+  }
+}
+
 
 
 
