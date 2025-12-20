@@ -23,22 +23,24 @@ body {
   background: var(--light);
   color: var(--dark);
   line-height: 1.7;
+  overflow-y: auto;
 }
 
 /* ================= HEADER ================= */
 header {
-  position: sticky;
-  top: 0;
-  z-index: 999;
   background: linear-gradient(135deg, #0f172a, #020617);
-  padding: 18px 10%;
+  color: #fff;
 }
 .nav {
+  position: sticky;      /* NOT fixed */
+  top: 0;
+  z-index: 999;
   display: flex;
   gap: 28px;
-  align-items: center;
+  padding: 18px 10%;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  backdrop-filter: blur(10px);
 }
-
 .nav a {
   color: #e5e7eb;
   text-decoration: none;
@@ -72,6 +74,7 @@ header {
   grid-template-columns: 1.2fr 1fr;
   gap: 40px;
   align-items: center;
+  padding-top: 120px;
 }
 
 .hero h1 {
@@ -752,6 +755,7 @@ body {
     font-size: 30px;
   }
 }
+
 
 
 
