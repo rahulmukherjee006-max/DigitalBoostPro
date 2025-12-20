@@ -612,6 +612,77 @@ button {
   border-radius: 8px;
   font-weight: bold;
 }
+/* Process Section */
+.process {
+  padding: 80px 10%;
+  background: #f9fafb;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 50px;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.process-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.process-card img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.process-card h3 {
+  margin-bottom: 10px;
+}
+
+.process-card p {
+  color: #555;
+  font-size: 15px;
+}
+
+.process-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+}
+
+.process-card.featured {
+  border: 2px solid #4fa3ff;
+  transform: scale(1.05);
+}
+
+.btn-primary {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #4fa3ff;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background: #2e8de1;
+}
+
 
 
 
