@@ -27,15 +27,16 @@ body {
 
 /* ================= HEADER ================= */
 header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
   background: linear-gradient(135deg, #0f172a, #020617);
-  color: #fff;
-  padding: 25px 10%;
+  padding: 18px 10%;
 }
-
 .nav {
   display: flex;
-  gap: 24px;
-  margin-bottom: 30px;
+  gap: 28px;
+  align-items: center;
 }
 
 .nav a {
@@ -43,7 +44,24 @@ header {
   text-decoration: none;
   font-weight: 500;
 }
+.nav a {
+  position: relative;
+}
 
+.nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: #38bdf8;
+  transition: width 0.3s ease;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
 .nav a:hover {
   color: var(--primary);
 }
@@ -414,7 +432,11 @@ footer {
 
 /* Space for fixed navbar */
 body {
-  padding-top: 90px;
+  margin: 0;
+  padding: 0;
+  background: var(--light);
+  color: var(--dark);
+  font-family: 'Inter', 'Segoe UI', sans-serif;
 }
 
 /* Mobile */
@@ -522,6 +544,7 @@ body {
     text-align: center;
   }
 }
+
 
 
 
