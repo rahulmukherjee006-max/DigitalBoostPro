@@ -7,3 +7,14 @@ btn && btn.addEventListener('click', ()=> {
   nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
   if(window.innerWidth <= 800) nav.style.flexDirection = 'column';
 });
+// Sticky navbar animation on scroll
+const header = document.querySelector(".site-header");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 20) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
+
