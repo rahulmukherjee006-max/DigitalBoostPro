@@ -328,6 +328,36 @@ button {
   gap: 20px;
   font-weight: 600;
 }
+.pricing {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.price-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.price-card.featured {
+  border: 2px solid #38bdf8;
+  transform: scale(1.05);
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
 
 
 
