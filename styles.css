@@ -1,6 +1,8 @@
+/* =====================
+   VARIABLES
+===================== */
 :root {
-  --primary: #4f46e5;
-  --secondary: #22c55e;
+  --primary: #38bdf8;
   --dark: #0f172a;
   --light: #f8fafc;
   --muted: #64748b;
@@ -9,35 +11,38 @@
   --shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
+/* =====================
+   RESET
+===================== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--light);
   color: var(--dark);
   line-height: 1.7;
-  font-family: 'Inter', 'Segoe UI', sans-serif;
 }
 
-/* Header */
+/* =====================
+   HEADER & NAV
+===================== */
 header {
-  background: #0f172a;
+  background: linear-gradient(135deg, #0f172a, #020617);
   color: #fff;
   padding: 20px 10%;
 }
 
 .nav {
   display: flex;
-  gap: 20px;
-  margin-bottom: 20px;
+  gap: 25px;
 }
 
 .nav a {
@@ -47,31 +52,60 @@ header {
 }
 
 .nav a:hover {
-  color: #38bdf8;
+  color: var(--primary);
+}
+
+/* =====================
+   HERO
+===================== */
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  padding: 80px 10%;
+  align-items: center;
 }
 
 .hero h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
 .hero p {
-  font-size: 18px;
+  font-size: 1.1rem;
   color: #cbd5f5;
+  margin-bottom: 30px;
 }
 
-.hero a {
+.hero-image img {
+  width: 100%;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* =====================
+   BUTTONS
+===================== */
+.btn,
+.btn-primary {
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background: #38bdf8;
-  color: #0f172a;
-  border-radius: 6px;
+  padding: 14px 28px;
+  background: var(--primary);
+  color: #000;
+  border-radius: 999px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
 }
 
-/* Main */
+.btn:hover,
+.btn-primary:hover {
+  background: #0ea5e9;
+  color: #fff;
+}
+
+/* =====================
+   SECTIONS
+===================== */
 main {
   padding: 60px 10%;
 }
@@ -81,299 +115,24 @@ main {
   border-radius: var(--radius);
   padding: 30px;
   box-shadow: var(--shadow);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 50px rgba(0,0,0,0.12);
-}
-
-
-/* CTA */
-.cta {
-  background: #0f172a;
-  color: white;
-  padding: 50px 10%;
-  text-align: center;
-}
-
-.cta a {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px 28px;
-  background: #38bdf8;
-  color: #0f172a;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #020617;
-  color: #94a3b8;
-}
-/* Shared layout */
-.container {
-  padding: 60px 10%;
-}
-
-/* Services Page */
-.service-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 24px;
-  margin-top: 40px;
-}
-
-.service-card {
-  background: #ffffff;
-  padding: 24px;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
-
-.service-card h3 {
-  margin-bottom: 10px;
-  color: #0f172a;
-}
-/* WhatsApp Floating Button */
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25d366;
-  color: white;
-  font-size: 26px;
-  padding: 14px 16px;
-  border-radius: 50%;
-  text-decoration: none;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
-  z-index: 1000;
-}
-
-.whatsapp-float:hover {
-  transform: scale(1.1);
-}
-.trust {
-  background: #f1f5f9;
-  padding: 60px 10%;
-}
-
-.trust ul {
-  list-style: none;
-  margin-top: 20px;
-}
-
-.trust li {
-  margin-bottom: 12px;
-  font-size: 18px;
-}
-.about-preview {
-  padding: 60px 10%;
-  background: #ffffff;
-}
-
-.about-preview h2 {
-  font-size: 32px;
-  margin-bottom: 15px;
-}
-
-.about-preview p {
-  font-size: 18px;
-  max-width: 700px;
-}
-
-.about-preview ul {
-  margin-top: 20px;
-}
-
-.about-preview li {
-  margin-bottom: 10px;
-  font-size: 16px;
-}
-.about-page {
-  padding: 60px 10%;
-  background: #f9fafb;
-}
-
-.about-page h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-.about-page h2 {
-  margin-top: 30px;
-}
-.contact-page {
-  padding: 60px 10%;
-}
-
-form {
-  max-width: 500px;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-}
-
-button {
-  background: #3ea6ff;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  cursor: pointer;
-}
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366;
-  color: white;
-  font-size: 24px;
-  padding: 12px 15px;
-  border-radius: 50%;
-  text-decoration: none;
-}
-/* Services Page */
-.services-page {
-  padding: 60px 10%;
-}
-
-.service-box {
-  background: #ffffff;
+/* =====================
+   SERVICES
+===================== */
+.services-page .service-box {
+  background: #fff;
   padding: 30px;
   margin-bottom: 30px;
-  border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
 
-.service-box h2 {
-  margin-bottom: 10px;
-  color: #0f172a;
-}
-
-.service-box ul {
-  margin-top: 10px;
-  padding-left: 20px;
-}
-
-.cta {
-  text-align: center;
-  margin-top: 60px;
-}
-
-.btn {
-  display: inline-block;
-  background: #38bdf8;
-  color: #000;
-  padding: 14px 28px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* WhatsApp Button */
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366;
-  color: #fff;
-  padding: 14px 18px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: bold;
-  z-index: 999;
-}
-/* WhatsApp Floating Button */
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25D366;
-  color: #fff;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-  z-index: 1000;
-  transition: transform 0.3s ease;
-}
-
-.whatsapp-float:hover {
-  transform: scale(1.1);
-  background-color: #1ebe5d;
-}
+/* =====================
+   TESTIMONIALS
+===================== */
 .testimonials {
   padding: 80px 10%;
-  background: #f8fafc;
-  text-align: center;
-}
-
-.testimonial-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
-}
-
-.testimonial {
-  background: #fff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-}
-
-.trust-badges {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  font-weight: 600;
-}
-.pricing {
-  padding: 80px 10%;
-  text-align: center;
-}
-
-.pricing-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
-}
-
-.price-card {
-  background: #fff;
-  padding: 40px;
-  border-radius: 14px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-}
-
-.price-card.featured {
-  border: 2px solid #38bdf8;
-  transform: scale(1.05);
-}
-
-.price {
-  font-size: 24px;
-  font-weight: 700;
-  margin: 20px 0;
-}
-/* Testimonials */
-.testimonials {
-  padding: 80px 10%;
-  background: #f9fafb;
   text-align: center;
 }
 
@@ -388,14 +147,16 @@ button {
   background: #fff;
   padding: 25px;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-  font-size: 15px;
+  box-shadow: var(--shadow);
+  font-style: italic;
 }
-/* Pricing */
+
+/* =====================
+   PRICING
+===================== */
 .pricing {
   padding: 80px 10%;
   text-align: center;
-  background: #fff;
 }
 
 .pricing-grid {
@@ -406,14 +167,10 @@ button {
 }
 
 .price-card {
-  border: 1px solid #e5e7eb;
-  padding: 30px;
-  border-radius: 15px;
-}
-
-.price-card.popular {
-  border: 2px solid #3b82f6;
-  transform: scale(1.05);
+  background: #fff;
+  padding: 35px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
 
 .price {
@@ -422,30 +179,13 @@ button {
   margin: 15px 0;
 }
 
-.price-card ul {
-  list-style: none;
-  padding: 0;
-}
-
-.price-card li {
-  margin: 10px 0;
-}
+/* =====================
+   CONTACT
+===================== */
 .contact-section {
   max-width: 900px;
   margin: 60px auto;
-  padding: 20px;
   text-align: center;
-}
-
-.contact-section h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.contact-section p {
-  font-size: 18px;
-  margin-bottom: 30px;
-  color: #555;
 }
 
 .form-wrapper iframe {
@@ -454,456 +194,34 @@ button {
   border-radius: 12px;
   border: none;
 }
-.hero {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 40px;
-  padding: 80px 10%;
-  align-items: center;
-  background: linear-gradient(135deg, #0f172a, #020617);
-  color: white;
-}
 
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  animation: fadeUp 0.8s ease forwards;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  color: #cbd5f5;
-  margin-bottom: 30px;
-  animation: fadeUp 1s ease forwards;
-}
-
-.hero-image img {
-  width: 100%;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  animation: float 4s ease-in-out infinite;
-}
-
-.btn-primary {
-  background: var(--primary);
-  color: white;
-  padding: 14px 28px;
-  border-radius: 999px;
-  font-weight: 600;
-  display: inline-block;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(79,70,229,0.4);
-}
-
-/* Animations */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
-  100% { transform: translateY(0); }
-}
-@media (max-width: 900px) {
-  .hero {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .hero-image {
-    order: -1;
-  }
-
-  .hero h1 {
-    font-size: 2.2rem;
-  }
-}
-/* Animations */
-.fade-in {
-  opacity: 0;
-  transform: translateY(40px);
-  animation: fadeUp 0.8s ease forwards;
-}
-
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Cards */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  padding: 60px 10%;
-}
-
-.card {
-  background: #fff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-}
-
-/* Why Section */
-.why {
-  padding: 60px 10%;
-  background: #f4f6fb;
-}
-
-.why ul {
-  list-style: none;
-  margin-top: 20px;
-}
-
-.why li {
-  margin-bottom: 10px;
-  font-size: 18px;
-}
-
-/* Testimonials */
-.testimonials {
-  padding: 60px 10%;
-}
-
-.testimonial-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-  margin-top: 30px;
-}
-
-.testimonial {
-  background: #fff;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  font-style: italic;
-}
-
-.testimonial span {
-  display: block;
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-/* Final CTA */
-.final-cta {
-  background: linear-gradient(135deg, #0f172a, #020617);
+/* =====================
+   CTA
+===================== */
+.cta {
+  background: var(--dark);
   color: #fff;
   padding: 70px 10%;
   text-align: center;
 }
 
-.final-cta .cta-btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 14px 30px;
-  background: #38bdf8;
-  color: #000;
-  border-radius: 8px;
-  font-weight: bold;
-}
-/* Process Section */
-.process {
-  padding: 80px 10%;
-  background: #f9fafb;
+/* =====================
+   FOOTER
+===================== */
+footer {
   text-align: center;
+  padding: 20px;
+  background: #020617;
+  color: #94a3b8;
 }
 
-.section-title {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.section-subtitle {
-  color: #555;
-  max-width: 600px;
-  margin: 0 auto 50px;
-}
-
-.process-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-}
-
-.process-card {
-  background: #fff;
-  border-radius: 16px;
-  padding: 30px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.06);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.process-card img {
-  width: 60px;
-  margin-bottom: 20px;
-}
-
-.process-card h3 {
-  margin-bottom: 10px;
-}
-
-.process-card p {
-  color: #555;
-  font-size: 15px;
-}
-
-.process-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 30px 60px rgba(0,0,0,0.1);
-}
-
-.process-card.featured {
-  border: 2px solid #4fa3ff;
-  transform: scale(1.05);
-}
-
-.btn-primary {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background: #4fa3ff;
-  color: #fff;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.btn-primary:hover {
-  background: #2e8de1;
-}
-/* ===== Process Section ===== */
-
-.process-section {
-  background: #0f172a;
-  padding: 80px 10%;
-  text-align: center;
-  color: #fff;
-}
-
-.section-title {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.section-subtitle {
-  font-size: 18px;
-  color: #cbd5e1;
-  margin-bottom: 50px;
-}
-
-.process-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-}
-
-.process-card {
-  background: #ffffff;
-  color: #0f172a;
-  padding: 35px 25px;
-  border-radius: 16px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.process-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 30px 60px rgba(0,0,0,0.25);
-}
-
-.process-card img {
-  width: 60px;
-  margin-bottom: 20px;
-}
-
-.process-card h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.process-card p {
-  font-size: 15px;
-  color: #475569;
-}
-
-/* ===== Animations ===== */
-
-.fade-up {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeUp 0.8s ease forwards;
-}
-
-.delay-1 {
-  animation-delay: 0.2s;
-}
-
-.delay-2 {
-  animation-delay: 0.4s;
-}
-
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 28px;
-  }
-}
-/* ===== PROCESS SECTION ===== */
-.process {
-  background: #f9fafb;
-  padding: 80px 10%;
-  text-align: center;
-}
-
-.process h2 {
-  font-size: 36px;
-  color: #0f172a;
-  margin-bottom: 10px;
-}
-
-.process .sub {
-  color: #475569;
-  font-size: 18px;
-  margin-bottom: 50px;
-}
-
-.process-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-}
-
-.process-card {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 35px 25px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-  transition: all 0.3s ease;
-}
-
-.process-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-}
-
-.process-card img {
-  width: 64px;
-  margin-bottom: 20px;
-}
-
-.process-card h3 {
-  color: #0f172a;
-  margin-bottom: 10px;
-}
-
-.process-card p {
-  color: #475569;
-  font-size: 15px;
-}
-
-/* Highlight center card */
-.process-card.highlight {
-  border: 2px solid #38bdf8;
-  transform: scale(1.03);
-}
-
-/* Button */
-.btn-primary {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px 22px;
-  background: #38bdf8;
-  color: #0f172a;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.btn-primary:hover {
-  background: #0ea5e9;
-  color: #fff;
-}
-
-/* Mobile fix */
-@media (max-width: 768px) {
-  .process {
-    padding: 60px 6%;
-  }
-}
-/* WhatsApp Floating Button */
+/* =====================
+   ✅ WHATSAPP FLOAT BUTTON (ONLY ONE)
+===================== */
 .whatsapp-float {
   position: fixed;
-  right: 20px;
-  bottom: 20px;
-  width: 56px;
-  height: 56px;
-  background-color: #25D366;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-  z-index: 9999;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.whatsapp-float svg {
-  width: 28px;
-  height: 28px;
-}
-
-.whatsapp-float:hover {
-  transform: scale(1.1);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
-}
-/* WhatsApp Floating Button */
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 55px;
-  height: 55px;
-  background-color: #25d366;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-  z-index: 9999;
-  transition: transform 0.3s ease;
-}
-
-.whatsapp-float:hover {
-  transform: scale(1.1);
-}
-
-.whatsapp-float img {
-  width: 28px;
-  height: 28px;
-}
-/* WhatsApp Floating Button */
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 24px;
+  right: 24px;
   width: 56px;
   height: 56px;
   background: #25D366;
@@ -911,35 +229,9 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
   z-index: 9999;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.whatsapp-float img {
-  width: 28px;
-  height: 28px;
-}
-
-.whatsapp-float:hover {
-  transform: scale(1.1);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35);
-}
-/* WhatsApp Floating Button */
-.whatsapp-float {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  width: 56px;
-  height: 56px;
-  background-color: #25d366;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-  z-index: 9999;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .whatsapp-float img {
@@ -949,31 +241,18 @@ button {
 
 .whatsapp-float:hover {
   transform: scale(1.12);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
 }
 
+/* =====================
+   MOBILE
+===================== */
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+}
