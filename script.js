@@ -17,4 +17,14 @@ window.addEventListener("scroll", () => {
     header.classList.remove("scrolled");
   }
 });
+// HERO IMAGE SLIDER
+const slides = document.querySelectorAll(".hero-slider img");
+let currentSlide = 0;
+
+setInterval(() => {
+  slides[currentSlide].classList.remove("active");
+  currentSlide = (currentSlide + 1) % slides.length;
+  slides[currentSlide].classList.add("active");
+}, 3500);
+
 
