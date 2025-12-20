@@ -26,5 +26,18 @@ setInterval(() => {
   currentSlide = (currentSlide + 1) % slides.length;
   slides[currentSlide].classList.add("active");
 }, 3500);
+const testimonials = [
+  "Our ROAS doubled within 45 days. Clear strategy & honest reporting.",
+  "Best decision we made for paid ads. Very transparent.",
+  "Leads quality improved drastically after switching to Digital Boost Pro."
+];
+
+let index = 0;
+setInterval(() => {
+  document.getElementById("testimonial").innerHTML =
+    `"${testimonials[index]}"<br><br><strong>— Client</strong>`;
+  index = (index + 1) % testimonials.length;
+}, 4000);
+
 
 
