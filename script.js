@@ -59,6 +59,19 @@ counters.forEach(counter => {
 
   updateCount();
 });
+// CTA fade-in on scroll
+const cta = document.querySelector('.cta-animated');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+});
+
+if (cta) observer.observe(cta);
+
 
 
 
