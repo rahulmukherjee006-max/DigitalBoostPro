@@ -378,6 +378,46 @@ button {
   box-shadow: 0 10px 30px rgba(0,0,0,0.05);
   font-size: 15px;
 }
+/* Pricing */
+.pricing {
+  padding: 80px 10%;
+  text-align: center;
+  background: #fff;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.price-card {
+  border: 1px solid #e5e7eb;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.price-card.popular {
+  border: 2px solid #3b82f6;
+  transform: scale(1.05);
+}
+
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.price-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.price-card li {
+  margin: 10px 0;
+}
+
 
 
 
