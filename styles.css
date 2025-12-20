@@ -1,3 +1,18 @@
+:root {
+  --primary: #4f46e5;
+  --secondary: #22c55e;
+  --dark: #0f172a;
+  --light: #f8fafc;
+  --muted: #64748b;
+  --card: #ffffff;
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,9 +21,10 @@
 }
 
 body {
-  background: #f9fafb;
-  color: #111827;
-  line-height: 1.6;
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.7;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
 }
 
 /* Header */
@@ -441,6 +457,7 @@ button {
   border-radius: 12px;
   border: none;
 }
+
 
 
 
