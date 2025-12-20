@@ -901,6 +901,67 @@ body {
   from {opacity:0; transform:translateY(40px);}
   to {opacity:1; transform:translateY(0);}
 }
+/* ================= WHY DIGITAL BOOST PRO ================= */
+
+.why-pro {
+  padding: 80px 10%;
+  background: #f8fafc;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+}
+
+.why-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+.why-card .icon {
+  font-size: 2.5rem;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.why-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.why-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Animation */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 
 
