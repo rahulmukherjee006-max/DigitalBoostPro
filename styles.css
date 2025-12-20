@@ -682,6 +682,91 @@ button {
 .btn-primary:hover {
   background: #2e8de1;
 }
+/* ===== Process Section ===== */
+
+.process-section {
+  background: #0f172a;
+  padding: 80px 10%;
+  text-align: center;
+  color: #fff;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  color: #cbd5e1;
+  margin-bottom: 50px;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.process-card {
+  background: #ffffff;
+  color: #0f172a;
+  padding: 35px 25px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.25);
+}
+
+.process-card img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.process-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.process-card p {
+  font-size: 15px;
+  color: #475569;
+}
+
+/* ===== Animations ===== */
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.2s;
+}
+
+.delay-2 {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 28px;
+  }
+}
+
 
 
 
