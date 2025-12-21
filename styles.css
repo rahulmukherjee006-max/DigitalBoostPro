@@ -1324,6 +1324,70 @@ body {
   display: flex;
   gap: 28px;
 }
+/* =========================
+   EXTRA SERVICES SECTION
+========================= */
+
+.extra-services {
+  padding: 70px 10%;
+  background: #f8fafc;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #0f172a;
+}
+
+.extra-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.extra-card {
+  background: #ffffff;
+  padding: 35px 30px;
+  border-radius: 18px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: all 0.35s ease;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.extra-card i {
+  font-size: 42px;
+  color: #38bdf8;
+  margin-bottom: 20px;
+}
+
+.extra-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+
+.extra-card p {
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* Hover Animation */
+.extra-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 30px 60px rgba(56,189,248,0.25);
+}
+
+/* Reveal Animation */
+.extra-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 
 
