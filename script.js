@@ -71,6 +71,21 @@ const observer = new IntersectionObserver(entries => {
 });
 
 if (cta) observer.observe(cta);
+// Extra services scroll animation
+const extraCards = document.querySelectorAll('.extra-card');
+
+const extraObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+}, { threshold: 0.2 });
+
+extraCards.forEach(card => {
+  extraObserver.observe(card);
+});
+
 
 
 
