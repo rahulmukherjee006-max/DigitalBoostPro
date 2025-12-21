@@ -1193,6 +1193,87 @@ body {
     transform: translateY(-8px);
   }
 }
+/* =========================
+   BRAND LOGO (TEXT)
+========================= */
+
+.brand {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  animation: slideInLeft 0.8s ease forwards;
+  position: relative;
+}
+
+/* Underline hover animation */
+.brand::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: #5eb7ff;
+  transition: width 0.3s ease;
+}
+
+.brand:hover::after {
+  width: 100%;
+}
+
+/* =========================
+   NAVBAR LAYOUT FIX
+========================= */
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Group links on right */
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+/* Link hover animation */
+.nav-links a {
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: #5eb7ff;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 
 
 
