@@ -1273,6 +1273,58 @@ body {
     transform: translateX(0);
   }
 }
+/* =======================
+   LOGO BRANDING
+======================= */
+
+.logo {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  background: linear-gradient(90deg, #5cc8ff, #8b5cf6, #22c55e);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: logoGradient 6s ease infinite;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.08);
+}
+.logo::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, #5cc8ff, #8b5cf6);
+  transition: width 0.4s ease;
+}
+
+.logo:hover::after {
+  width: 100%;
+}
+
+/* Gradient animation */
+@keyframes logoGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Nav alignment fix */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
 
 
 
