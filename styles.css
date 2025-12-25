@@ -2,7 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  padding-top: 120px;
+  padding-top: 90px;
 }
 :root {
   --primary: #38bdf8;
@@ -33,14 +33,17 @@ header {
   color: #fff;
 }
 .nav {
-  position: sticky;      /* NOT fixed */
+  position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 9999; /* 🔥 very important */
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: 28px;
   padding: 18px 10%;
   background: linear-gradient(135deg, #0f172a, #020617);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
 }
 .nav a {
   color: #e5e7eb;
@@ -1465,6 +1468,7 @@ body {
 .nav-links a:hover::after {
   width: 100%;
 }
+
 
 
 
