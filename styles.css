@@ -1387,6 +1387,84 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+/* ==============================
+   GLASS SCROLL NAVBAR
+============================== */
+
+.glass-nav {
+  position: fixed;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 60px);
+  max-width: 1200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 14px 28px;
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  z-index: 9999;
+  transition: all 0.4s ease;
+}
+
+/* Visible on scroll */
+.glass-nav.active {
+  top: 20px;
+}
+
+/* Logo */
+.glass-nav .logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #6fd1ff;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: transform 0.3s ease;
+}
+
+.glass-nav .logo:hover {
+  transform: scale(1.05);
+}
+
+/* Menu */
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+/* Hover underline animation */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: #6fd1ff;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
 
 
 
