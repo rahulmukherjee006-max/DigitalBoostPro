@@ -85,6 +85,20 @@ const extraObserver = new IntersectionObserver(entries => {
 extraCards.forEach(card => {
   extraObserver.observe(card);
 });
+/* ==============================
+   SCROLL GLASS NAV EFFECT
+============================== */
+
+const glassNav = document.querySelector(".glass-nav");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 120) {
+    glassNav.classList.add("active");
+  } else {
+    glassNav.classList.remove("active");
+  }
+});
+
 
 
 
