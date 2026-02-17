@@ -32,18 +32,28 @@ header {
   color: #fff;
 }
 .nav {
-  position: fixed; /* FIXED instead of sticky */
+  position: fixed;           /* visible immediately */
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9999; /* always on top */
+  z-index: 9999;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   padding: 18px 10%;
-  background: linear-gradient(135deg, #0f172a, #020617);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+  background: linear-gradient(
+    135deg,
+    rgba(10, 20, 40, 0.92),
+    rgba(5, 10, 25, 0.92)
+  );
+
+  backdrop-filter: blur(14px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+
+  opacity: 1;               /* IMPORTANT */
+  transform: none;          /* IMPORTANT */
 }
 .nav a {
   color: #e5e7eb;
@@ -1471,6 +1481,7 @@ body {
 .nav-links a:hover::after {
   width: 100%;
 }
+
 
 
 
