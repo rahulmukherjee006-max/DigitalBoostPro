@@ -1,7 +1,6 @@
 html, body {
- margin: 0;
+  margin: 0;
   font-family: 'Inter', sans-serif;
-  padding-top: 90px; /* IMPORTANT: space for navbar */
 }
 :root {
   --primary: #38bdf8;
@@ -73,7 +72,7 @@ html {
   grid-template-columns: 1.1fr 1fr;
   align-items: center;
   gap: 50px;
-  padding: 90px 10%;
+   padding-top: 140px; /* navbar height + breathing space */
   background: linear-gradient(135deg, #0f172a, #020617);
   color: #fff;
   overflow: hidden;
@@ -1359,6 +1358,7 @@ body {
     transform: translateY(0);
   }
 }
+
 
 
 
