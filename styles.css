@@ -325,22 +325,6 @@ footer {
   font-weight: bold;
 }
 
-/* Animations */
-.fade-up {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeUp 0.8s ease forwards;
-}
-
-.delay-1 { animation-delay: 0.2s; }
-.delay-2 { animation-delay: 0.4s; }
-
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 /* ===== Growth Process Section ===== */
 .growth-process {
   padding: 100px 10%;
@@ -1341,8 +1325,6 @@ body {
   font-weight: 500;
   position: relative;
 }
-
-/* Hover underline animation */
 .nav-links a::after {
   content: "";
   position: absolute;
@@ -1350,13 +1332,34 @@ body {
   bottom: -6px;
   width: 0%;
   height: 2px;
-  background: #6fd1ff;
+  background: #38bdf8;
   transition: width 0.3s ease;
 }
 
 .nav-links a:hover::after {
   width: 100%;
 }
+/* =========================
+   GLOBAL FADE-UP ANIMATION
+========================= */
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 
 
