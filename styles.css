@@ -1226,42 +1226,6 @@ body {
 }
 
 /* =========================
-   NAVBAR LAYOUT FIX
-========================= */
-
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* Group links on right */
-.nav-links {
-  display: flex;
-  gap: 28px;
-}
-
-/* Link hover animation */
-.nav-links a {
-  position: relative;
-}
-
-.nav-links a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  width: 0%;
-  height: 2px;
-  background: #5eb7ff;
-  transition: width 0.3s ease;
-}
-
-.nav-links a:hover::after {
-  width: 100%;
-}
-
-/* =========================
    ANIMATIONS
 ========================= */
 
@@ -1315,17 +1279,6 @@ body {
   100% { background-position: 0% 50%; }
 }
 
-/* Nav alignment fix */
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.nav-links {
-  display: flex;
-  gap: 28px;
-}
 /* =========================
    EXTRA SERVICES SECTION
 ========================= */
@@ -1466,6 +1419,7 @@ body {
 .nav-links a:hover::after {
   width: 100%;
 }
+
 
 
 
