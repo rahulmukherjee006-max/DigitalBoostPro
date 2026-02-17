@@ -32,47 +32,28 @@ header {
   color: #fff;
 }
 .nav {
-  position: fixed;           /* visible immediately */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 9999;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding: 18px 10%;
   background: linear-gradient(
     135deg,
-    rgba(10, 20, 40, 0.92),
-    rgba(5, 10, 25, 0.92)
+    rgba(10, 20, 40, 0.95),
+    rgba(5, 10, 25, 0.95)
   );
-
   backdrop-filter: blur(14px);
   box-shadow: 0 8px 30px rgba(0,0,0,0.35);
-
-  opacity: 1;               /* IMPORTANT */
-  transform: none;          /* IMPORTANT */
 }
+
 .nav a {
   color: #e5e7eb;
   text-decoration: none;
   font-weight: 500;
-}
-.nav a {
-  position: relative;
-}
-
-.nav a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  width: 0%;
-  height: 2px;
-  background: #38bdf8;
-  transition: width 0.3s ease;
 }
 
 .nav a:hover::after {
@@ -440,6 +421,7 @@ footer {
   }
 }
 /* ===== Sticky Animated Navbar ===== */
+/*
 .site-header {
   position: fixed;
   top: 0;
@@ -450,23 +432,24 @@ footer {
   padding: 18px 10%;
   transition: all 0.35s ease;
 }
-
+*/
 /* Navbar when scrolling */
+/*
 .site-header.scrolled {
   padding: 12px 10%;
   backdrop-filter: blur(10px);
   background: rgba(15, 23, 42, 0.92);
   box-shadow: 0 10px 30px rgba(0,0,0,0.35);
 }
-
-/* Nav layout */
+*/
+/* Nav layout 
 .nav {
   display: flex;
   gap: 30px;
   align-items: center;
 }
-
-/* Nav links */
+*/
+/* Nav links 
 .nav a {
   color: #e5e7eb;
   text-decoration: none;
@@ -475,8 +458,8 @@ footer {
   position: relative;
   transition: color 0.3s ease;
 }
-
-/* Hover underline animation */
+*/
+/* Hover underline animation 
 .nav a::after {
   content: "";
   position: absolute;
@@ -495,8 +478,8 @@ footer {
 .nav a:hover {
   color: #38bdf8;
 }
-
-/* Space for fixed navbar */
+*/
+/* Space for fixed navbar
 body {
   margin: 0;
   padding: 0;
@@ -504,8 +487,8 @@ body {
   color: var(--dark);
   font-family: 'Inter', 'Segoe UI', sans-serif;
 }
-
-/* Mobile */
+ */
+/* Mobile 
 @media (max-width: 768px) {
   .site-header {
     padding: 14px 6%;
@@ -519,7 +502,8 @@ body {
     font-size: 16px;
   }
 }
-/* ===== SERVICES PAGE ===== */
+*/
+/* ===== SERVICES PAGE =====
 
 .sticky-nav {
   position: sticky;
@@ -610,6 +594,7 @@ body {
     text-align: center;
   }
 }
+*/
 /* ===== ABOUT PAGE ===== */
 
 .about-page {
@@ -1407,7 +1392,7 @@ body {
 /* ==============================
    GLASS SCROLL NAVBAR
 ============================== */
-
+/*
 .glass-nav {
   position: fixed;
   top: -100px;
@@ -1433,7 +1418,7 @@ body {
   z-index: 9999;
   transition: all 0.4s ease;
 }
-
+*/
 /* Visible on scroll */
 .glass-nav.active {
   top: 20px;
@@ -1481,6 +1466,7 @@ body {
 .nav-links a:hover::after {
   width: 100%;
 }
+
 
 
 
