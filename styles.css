@@ -397,22 +397,7 @@ footer {
   line-height: 1.6;
 }
 
-/* Animations */
-.fade-up {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeUp 0.8s ease forwards;
-}
 
-.delay-1 { animation-delay: 0.2s; }
-.delay-2 { animation-delay: 0.4s; }
-
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 /* Mobile */
 @media (max-width: 768px) {
@@ -663,24 +648,6 @@ body {
   transform: translateY(-6px);
 }
 
-/* Animations */
-.fade-up {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeUp 0.8s ease forwards;
-}
-
-.delay-1 { animation-delay: 0.2s; }
-.delay-2 { animation-delay: 0.4s; }
-.delay-3 { animation-delay: 0.6s; }
-
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 /* Mobile */
 @media (max-width: 900px) {
   .about-hero {
@@ -772,23 +739,6 @@ body {
 
   .about-image {
     margin-top: 30px;
-  }
-}
-/* Animations */
-.fade-up {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeUp 0.8s ease forwards;
-}
-
-.delay-1 {
-  animation-delay: 0.2s;
-}
-
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 
@@ -950,18 +900,6 @@ body {
 .why-card p {
   font-size: 0.95rem;
   color: #555;
-}
-
-/* Animation */
-.fade-up {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.7s ease;
-}
-
-.fade-up.show {
-  opacity: 1;
-  transform: translateY(0);
 }
 /* ===== FINAL CTA SECTION ===== */
 
@@ -1419,6 +1357,7 @@ body {
 .nav-links a:hover::after {
   width: 100%;
 }
+
 
 
 
