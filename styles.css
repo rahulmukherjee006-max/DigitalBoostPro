@@ -1164,34 +1164,13 @@ body {
    LOGO BRANDING
 ======================= */
 
-.logo {
-  font-size: 28px;
-  font-weight: 800;
-  letter-spacing: 0.5px;
-  text-decoration: none;
-  background: linear-gradient(90deg, #5cc8ff, #8b5cf6, #22c55e);
-  background-size: 300% 300%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: logoGradient 6s ease infinite;
-  transition: transform 0.3s ease;
-}
-
-.logo:hover {
-  transform: scale(1.08);
-}
-.logo::after {
-  content: "";
+/* Logo image inside navbar */
+.logo img {
+  height: 42px;
+  width: auto;
   display: block;
-  height: 3px;
-  width: 0%;
-  background: linear-gradient(90deg, #5cc8ff, #8b5cf6);
-  transition: width 0.4s ease;
 }
 
-.logo:hover::after {
-  width: 100%;
-}
 
 /* Gradient animation */
 @keyframes logoGradient {
@@ -1358,6 +1337,7 @@ body {
     transform: translateY(0);
   }
 }
+
 
 
 
